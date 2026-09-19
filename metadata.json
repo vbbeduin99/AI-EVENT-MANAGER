@@ -1,0 +1,6 @@
+{
+  "name": "EventAI",
+  "description": "AI-Powered Event Creation and Real-time Blueprinting engine turning dream event visions into complete creative concepts, visual moodboards, budget breakdowns, timelines, and execution plans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

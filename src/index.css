@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app-dark: #08090C;
+  --color-surface: #101217;
+  --color-surface-2: #15171D;
+  --color-surface-3: #1C1F27;
+  --color-neon-accent: #D9FF65;
+  --color-periwinkle: #B8C6FF;
+  --color-text-primary: #F5F5F0;
+  --color-text-secondary: #9B9DA7;
+  --color-app-border: rgba(255, 255, 255, 0.09);
+  --color-app-border-hover: rgba(217, 255, 101, 0.3);
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #08090C;
+  color: #F5F5F0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #D9FF65;
+  color: #08090C;
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.glass-card {
+  background: rgba(16, 18, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(217, 255, 101, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), 0 0 20px -5px rgba(217, 255, 101, 0.12);
+}
+
+.accent-glow {
+  background: radial-gradient(circle, rgba(217, 255, 101, 0.12) 0%, rgba(8, 9, 12, 0) 70%);
+}
+
+.peri-glow {
+  background: radial-gradient(circle, rgba(184, 198, 255, 0.08) 0%, rgba(8, 9, 12, 0) 70%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.progress-bar-gradient {
+  background: linear-gradient(90deg, #B8C6FF 0%, #D9FF65 100%);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.08); }
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
